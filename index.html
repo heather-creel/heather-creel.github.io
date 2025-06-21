@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather Creel - Business Systems Leader</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Heather Creel - From service industry to Business Systems Leader. 22 years transforming operations through Salesforce expertise and strategic technology solutions. Currently available for VP Business Systems conversations.">
+    <meta name="keywords" content="Business Systems, Salesforce, CRM, Digital Transformation, Operations, VP Business Systems, Technology Leadership">
+    <meta name="author" content="Heather Creel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Heather Creel - Business Systems Leader">
+    <meta property="og:description" content="Driving strategic transformation through innovative technology solutions. Open to conversations about VP Business Systems opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heather-creel.github.io">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heather Creel - Business Systems Leader">
+    <meta name="twitter:description" content="Driving strategic transformation through innovative technology solutions">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -34,6 +56,7 @@
             width: 100%;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
         }
 
         nav {
@@ -53,6 +76,7 @@
             display: flex;
             list-style: none;
             gap: 2rem;
+            transition: transform 0.3s ease;
         }
 
         .nav-links a {
@@ -64,6 +88,54 @@
 
         .nav-links a:hover {
             color: #667eea;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #4a5568;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-toggle:hover {
+            color: #667eea;
+        }
+
+        /* Availability Badge */
+        .availability-badge {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(72, 187, 120, 0.3);
+            z-index: 999;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .availability-badge:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .availability-badge::before {
+            content: "🟢";
+            margin-right: 8px;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 20px rgba(72, 187, 120, 0.3); }
+            50% { box-shadow: 0 4px 30px rgba(72, 187, 120, 0.5); }
+            100% { box-shadow: 0 4px 20px rgba(72, 187, 120, 0.3); }
         }
 
         /* Hero Section */
@@ -82,8 +154,15 @@
 
         .hero .subtitle {
             font-size: 1.3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             opacity: 0.9;
+        }
+
+        .hero .availability-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            font-weight: 500;
         }
 
         .cta-button {
@@ -102,6 +181,7 @@
         .cta-button:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
+            color: white;
         }
 
         /* Main Content */
@@ -115,6 +195,14 @@
 
         .section {
             padding: 80px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .section h2 {
@@ -170,7 +258,7 @@
         /* Skills Section */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
 
@@ -261,6 +349,7 @@
             justify-content: center;
             gap: 2rem;
             margin-top: 2rem;
+            flex-wrap: wrap;
         }
 
         .contact-link {
@@ -279,12 +368,17 @@
         .contact-link:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
+            color: white;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
             }
 
             .about-content {
@@ -296,38 +390,146 @@
                 grid-template-columns: 1fr;
             }
 
+            .mobile-menu-toggle {
+                display: block;
+            }
+
             .nav-links {
-                display: none;
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 2rem;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
             }
 
             .contact-links {
                 flex-direction: column;
                 align-items: center;
             }
+
+            .availability-badge {
+                position: static;
+                margin: 1rem auto;
+                display: block;
+                width: fit-content;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
             }
         }
 
-        .section {
-            animation: fadeInUp 0.8s ease-out;
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #667eea;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Focus styles for accessibility */
+        a:focus,
+        button:focus {
+            outline: 2px solid #667eea;
+            outline-offset: 2px;
+        }
+
+        /* Lazy loading optimization */
+        .lazy-load {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .stat-card,
+            .contact {
+                background: #000;
+                color: #fff;
+            }
+            
+            .skill-category {
+                border-left-width: 8px;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            .availability-badge {
+                animation: none;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Availability Badge -->
+    <a href="#contact" class="availability-badge" aria-label="Currently available for opportunities">
+        Available for Conversations
+    </a>
+
     <header>
         <nav class="container">
             <div class="logo">Heather Creel</div>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-links" role="navigation">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -339,12 +541,13 @@
     <section class="hero">
         <div class="container">
             <h1>Business Systems Leader</h1>
-            <p class="subtitle">Driving strategic transformation through innovative technology solutions</p>
+            <p class="subtitle">From Service Industry to Systems Leadership: A Story of Determination</p>
+            <p class="availability-text">🟢 Open to VP Business Systems conversations</p>
             <a href="#contact" class="cta-button">Let's Connect</a>
         </div>
     </section>
 
-    <main>
+    <main id="main">
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
@@ -366,7 +569,7 @@
                             Years Corporate Experience
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number">25+</span>
+                            <span class="stat-number">50+</span>
                             Projects Led
                         </div>
                         <div class="stat-card">
@@ -375,7 +578,7 @@
                         </div>
                         <div class="stat-card">
                             <span class="stat-number">150+</span>
-                            Team Members Led
+                            People Coordinated
                         </div>
                     </div>
                 </div>
@@ -391,19 +594,24 @@
                         <ul class="skill-list">
                             <li>Salesforce Administration & Optimization</li>
                             <li>CRM Strategy & Implementation</li>
-                            <li>Process Automation</li>
-                            <li>System Integration</li>
+                            <li>Process Automation & Workflow Design</li>
+                            <li>System Integration & Data Migration</li>
                             <li>Data Analytics & Reporting</li>
+                            <li>Business Requirements Analysis</li>
+                            <li>System Configuration & Optimization</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h3>Leadership & Strategy</h3>
                         <ul class="skill-list">
-                            <li>Strategic Planning & Vision</li>
+                            <li>Strategic Planning & Vision Development</li>
                             <li>Cross-functional Collaboration</li>
-                            <li>Change Management</li>
-                            <li>Vendor Management</li>
-                            <li>Team Development</li>
+                            <li>Change Management & Organizational Development</li>
+                            <li>Vendor Management & Contract Negotiation</li>
+                            <li>Team Development & Mentoring</li>
+                            <li>Budget Management & ROI Analysis</li>
+                            <li>Stakeholder Alignment & Communication</li>
+                            <li>Digital Transformation Implementation</li>
                         </ul>
                     </div>
                     <div class="skill-category">
@@ -441,19 +649,27 @@
                     <div class="timeline-item">
                         <h3>Business Systems Director</h3>
                         <div class="company">Pantheon</div>
-                        <div class="period">2014 - 2024 (10+ years)</div>
-                        <p>Led enterprise-wide digital transformation initiatives, partnering with IT to implement automated systems that drove operational excellence. Implemented agile structure and operating model for Salesforce Admin/Developer Squad, enhancing operational efficiencies and increasing successful production deployments by 30%. Built and managed cross-functional teams ranging from 3-20 members across multiple geographies.</p>
+                        <div class="period">2021 - 2024 (3+ years)</div>
+                        <p>Led enterprise-wide digital transformation initiatives, partnering with IT to implement automated systems that drove operational excellence. Implemented agile structure and operating model for Salesforce Admin/Developer Squad, enhancing operational efficiencies and increasing successful production deployments by 30%. Built and managed teams up to 5 members, focusing on strategic systems optimization and process automation. (Joined after brief consulting role at Wipro)</p>
                     </div>
                     <div class="timeline-item">
-                        <h3>Operations & Systems Leadership Roles</h3>
-                        <div class="company">ADP & Comdata</div>
-                        <div class="period">2003 - 2014</div>
-                        <p>Progressive advancement through operations and systems roles, coordinating large-scale sales events for teams of 40-150 members, matrix-managing international teams of 20 in Russia, and building high-performing operational teams. Led critical CRM data consolidation project converting 4-6 duplicate lead records per prospect into unified account structure for 75-person sales team, implementing Sales Navigator integration that delivered $500K+ in annual productivity savings. Specialized in process optimization, system implementations, and cross-functional project coordination that delivered measurable business impact.</p>
+                        <h3>Business Systems & Operations Leadership</h3>
+                        <div class="company">Fleetcor (formerly Comdata)</div>
+                        <div class="period">2014 - 2021</div>
+                        <p>Advanced through progressive leadership roles during Comdata's acquisition by Fleetcor. Coordinated large-scale sales events for teams of 75-150 members and matrix-managed international teams of up to 20 members across multiple geographies in Russia. At one point managed 1 people manager, with largest direct team reaching 5 members. Built and managed cross-functional teams across departments.</p>
+                        
+                        <p>Led two major CRM initiatives: consolidated duplicate lead records into unified account structure for 75-person sales team ($470K+ annual savings), and implemented Sales Navigator integration improving contact success rates by 25%. Combined impact delivered $500K+ in annual productivity gains.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Operations & Systems Roles</h3>
+                        <div class="company">ADP</div>
+                        <div class="period">2011 - 2014</div>
+                        <p>Gained first exposure to advanced technologies like Salesforce while building operational excellence skills. Coordinated sales events for teams of 40 members while focusing on process improvement and system optimization, developing the technical foundation that would drive future leadership success in business systems roles.</p>
                     </div>
                     <div class="timeline-item">
                         <h3>Early Career & Foundation</h3>
-                        <div class="company">Various Companies</div>
-                        <div class="period">2003 - 2010</div>
+                        <div class="company">Axsa Document Solutions</div>
+                        <div class="period">2003 - 2011</div>
                         <p>Started corporate career after non-traditional path, quickly demonstrating natural aptitude for process improvement and operational excellence. Earned degree while working full-time and raising two children, developing strong work ethic and problem-solving skills that became foundation for future leadership success.</p>
                     </div>
                 </div>
@@ -463,15 +679,15 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <h2>Let's Connect</h2>
-                <p>Ready to drive your next business systems transformation? Let's discuss how we can work together.</p>
+                <p>Ready to drive your next business systems transformation? I'm currently open to conversations about VP Business Systems opportunities and would love to discuss how we can work together.</p>
                 <div class="contact-links">
-                    <a href="mailto:hcreeltn@gmail.com" class="contact-link">
+                    <a href="mailto:hcreeltn@gmail.com" class="contact-link" aria-label="Send email to Heather Creel">
                         📧 Email Me
                     </a>
-                    <a href="https://www.linkedin.com/in/heather-creel-tn/" class="contact-link">
+                    <a href="https://www.linkedin.com/in/heather-creel-tn/" class="contact-link" aria-label="View Heather Creel's LinkedIn profile" target="_blank" rel="noopener noreferrer">
                         💼 LinkedIn
                     </a>
-                    <a href="https://github.com/hcreeltn/hcreeltn.github.io/raw/main/Heather%20Creel%20Resume%20-%20June%202025.pdf" class="contact-link">
+                    <a href="https://github.com/heather-creel/heather-creel.github.io/raw/main/Heather%20Creel%20Resume%20-%20June%202025.pdf" class="contact-link" aria-label="Download Heather Creel's resume" target="_blank" rel="noopener noreferrer">
                         📄 Download Resume
                     </a>
                 </div>
@@ -480,6 +696,35 @@
     </main>
 
     <script>
+        // Mobile menu functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+            mobileMenuToggle.textContent = isExpanded ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -494,17 +739,22 @@
             });
         });
 
-        // Add scroll effect to header
+        // Enhanced scroll effect to header
+        let lastScrollTop = 0;
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            if (window.scrollY > 100) {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
                 header.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
+            
+            lastScrollTop = scrollTop;
         });
 
-        // Animate elements on scroll
+        // Intersection Observer for animations with performance optimization
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -513,18 +763,66 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('visible');
+                    // Unobserve after animation to improve performance
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
         // Observe all sections for animation
         document.querySelectorAll('.section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             observer.observe(section);
+        });
+
+        // Lazy loading for better performance
+        const lazyElements = document.querySelectorAll('.lazy-load');
+        const lazyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('loaded');
+                    lazyObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        lazyElements.forEach(element => {
+            lazyObserver.observe(element);
+        });
+
+        // Keyboard navigation enhancement
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                mobileMenuToggle.textContent = '☰';
+                mobileMenuToggle.focus();
+            }
+        });
+
+        // Form validation and error handling (if forms are added later)
+        const handleFormSubmit = (e) => {
+            e.preventDefault();
+            // Add form handling logic here
+        };
+
+        // Analytics tracking (placeholder for Google Analytics or similar)
+        const trackEvent = (eventName, eventData) => {
+            // Add analytics tracking here
+            console.log('Event tracked:', eventName, eventData);
+        };
+
+        // Track contact link clicks
+        document.querySelectorAll('.contact-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const linkType = e.target.textContent.trim();
+                trackEvent('contact_click', { type: linkType });
+            });
+        });
+
+        // Availability badge interaction
+        document.querySelector('.availability-badge').addEventListener('click', () => {
+            trackEvent('availability_click', { source: 'badge' });
         });
     </script>
 </body>
