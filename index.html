@@ -299,6 +299,115 @@
             font-weight: bold;
         }
 
+        /* Case Studies Section */
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-study-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .case-study-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-header h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .case-study-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .company-type {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .timeline {
+            background: #f7fafc;
+            color: #4a5568;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .case-study-content > div {
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-content h4 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .case-study-content p {
+            color: #718096;
+            line-height: 1.6;
+            font-style: italic;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #e2e8f0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .result-item {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+            min-width: 120px;
+        }
+
+        .result-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            word-break: break-word;
+        }
+
+        .result-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            word-break: break-word;
+            line-height: 1.2;
+        }
+
         /* Experience Section */
         .experience-timeline {
             position: relative;
@@ -532,6 +641,7 @@
             <ul class="nav-links" role="navigation">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -561,7 +671,7 @@
                         
                         <p><strong>Life Today:</strong> Now I'm living in Tennessee with my husband (married since 2004), our two teenagers, and our two dogs - a senior and a puppy. When I'm not optimizing business systems, you'll find me enjoying silly humor, sleeping in, planning travel adventures, tending to my garden, or working on puzzles.</p>
                         
-                        <p>I'm passionate about leveraging technology to solve real business problems and helping others navigate their career journeys. Currently seeking my next challenge as a VP of Business Systems where I can continue transforming how organizations work.</p>
+                        <p>I'm passionate about leveraging technology to solve real business problems and helping others navigate their career journeys. I embrace cutting-edge tools including AI to deliver results efficiently - even this website was created through AI collaboration. Currently seeking my next challenge as a VP of Business Systems where I can continue transforming how organizations work.</p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-card">
@@ -642,6 +752,135 @@
             </div>
         </section>
 
+        <section id="case-studies" class="section">
+            <div class="container">
+                <h2>Case Studies</h2>
+                <p style="text-align: center; margin-bottom: 3rem; color: #718096; font-style: italic;">Real projects, measurable results, confidential details protected</p>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <h3>CRM Data Consolidation</h3>
+                            <div class="case-study-meta">
+                                <span class="company-type">Mid-Market Financial Services</span>
+                                <span class="timeline">4-month project</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-content">
+                            <div class="challenge">
+                                <h4>🎯 Challenge</h4>
+                                <p>Massive data quality crisis affecting 75 sales reps. Each company had 4-6 duplicate lead records creating daily inefficiencies and eliminating visibility into various touchpoints within target organizations. Sales reps spent 20+ minutes daily just trying to understand account relationships and contact history.</p>
+                            </div>
+                            
+                            <div class="solution">
+                                <h4>⚡ Solution</h4>
+                                <p>Designed and implemented a phased data consolidation strategy over multiple cycles. Consolidated duplicate lead records into unified account structures, established proper account hierarchies, and created clear visibility into all organizational touchpoints. Implemented data governance processes to prevent future duplication.</p>
+                            </div>
+                            
+                            <div class="results">
+                                <h4>📈 Results</h4>
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <span class="result-number">$470K+</span>
+                                        <span class="result-label">Annual Savings</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">6,250</span>
+                                        <span class="result-label">Hours Saved/Year</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">75+</span>
+                                        <span class="result-label">Reps Impacted</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <h3>CRM & Okta Integration</h3>
+                            <div class="case-study-meta">
+                                <span class="company-type">Enterprise SaaS Platform</span>
+                                <span class="timeline">8-month project</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-content">
+                            <div class="challenge">
+                                <h4>🎯 Challenge</h4>
+                                <p>Access chaos across the organization - users with identical roles had inconsistent permissions, role changes left people with accumulated access they shouldn't have, and hundreds of ungrouped permission sets with 20+ profiles created a security and management nightmare requiring manual user setup for every new hire.</p>
+                            </div>
+                            
+                            <div class="solution">
+                                <h4>⚡ Solution</h4>
+                                <p>Led comprehensive access architecture redesign: identified user personas, consolidated hundreds of permission sets into logical groups, aligned vernacular across Workday-Okta-CRM systems, and built automated user provisioning with custom CRM automation for edge cases Okta couldn't handle. Extensive UAT ensured zero critical access loss during transition.</p>
+                            </div>
+                            
+                            <div class="results">
+                                <h4>📈 Results</h4>
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <span class="result-number">85%</span>
+                                        <span class="result-label">Fewer Setup Tickets</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">100%</span>
+                                        <span class="result-label">Access Consistency</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">Zero</span>
+                                        <span class="result-label">Manual Setups</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <h3>Partner Portal Implementation</h3>
+                            <div class="case-study-meta">
+                                <span class="company-type">Financial Services Company</span>
+                                <span class="timeline">2-month project</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-content">
+                            <div class="challenge">
+                                <h4>🎯 Challenge</h4>
+                                <p>Referral partners had zero visibility after submitting leads - they couldn't track deal progression, identify where they could help accelerate stuck deals, or know if their submissions were being actioned. This created partner frustration and missed opportunities for collaboration.</p>
+                            </div>
+                            
+                            <div class="solution">
+                                <h4>⚡ Solution</h4>
+                                <p>Implemented a private partner portal integrated with our CRM system. Partners could submit leads, track status in real-time, monitor conversion to opportunities, see assigned sales reps, and view current opportunity stages. Built with role-based access ensuring data privacy between partner companies.</p>
+                            </div>
+                            
+                            <div class="results">
+                                <h4>📈 Results</h4>
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <span class="result-number">100%</span>
+                                        <span class="result-label">Deal Visibility</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">Zero</span>
+                                        <span class="result-label">Partner Conflicts</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">Automated</span>
+                                        <span class="result-label">Status Updates</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="experience" class="section">
             <div class="container">
                 <h2>Professional Experience</h2>
@@ -694,6 +933,12 @@
             </div>
         </section>
     </main>
+
+    <footer style="background: #2d3748; color: white; text-align: center; padding: 2rem 0; font-size: 0.9rem;">
+        <div class="container">
+            <p>&copy; 2025 Heather Creel. Website designed collaboratively with AI assistance.</p>
+        </div>
+    </footer>
 
     <script>
         // Mobile menu functionality
