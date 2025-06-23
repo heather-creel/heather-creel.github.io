@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Creel - Business Systems Leader</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Heather Creel - From service industry to Business Systems Leader. 22 years transforming operations through Salesforce expertise and strategic technology solutions. Currently available for VP Business Systems conversations.">
+    <meta name="keywords" content="Business Systems, Salesforce, CRM, Digital Transformation, Operations, VP Business Systems, Technology Leadership">
+    <meta name="author" content="Heather Creel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Heather Creel - Business Systems Leader">
+    <meta property="og:description" content="Driving strategic transformation through innovative technology solutions. Open to conversations about VP Business Systems opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heather-creel.github.io">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heather Creel - Business Systems Leader">
+    <meta name="twitter:description" content="Driving strategic transformation through innovative technology solutions">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff6b9d;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ff6b9d;
+            background: rgba(255, 107, 157, 0.1);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 100px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 107, 157, 0.2);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            color: #ff6b9d;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .availability-badge::before {
+            content: "●";
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            border: none;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 157, 0.3);
+            color: white;
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+        }
+
+        /* Geometric Elements */
+        .hero-graphics {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .geometric-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(1px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            top: 50px;
+            left: 100px;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #4834d4, #686de0);
+            bottom: 100px;
+            right: 50px;
+            animation-delay: 2s;
+        }
+
+        .shape-3 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #ff9ff3, #f368e0);
+            top: 150px;
+            right: 150px;
+            animation-delay: 4s;
+        }
+
+        .shape-4 {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #3742fa, #2f3542);
+            bottom: 200px;
+            left: 50px;
+            animation-delay: 1s;
+        }
+
+        .shape-5 {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b9d, #ff9ff3);
+            top: 80px;
+            right: 80px;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 107, 157, 0.1);
+            border-color: rgba(255, 107, 157, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ff6b9d, #ff9ff3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-weight: 500;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            border-color: rgba(255, 107, 157, 0.3);
+        }
+
+        .skill-category h3 {
+            color: #ff6b9d;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.7rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-list li:hover {
+            opacity: 1;
+        }
+
+        .skill-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+
+        /* Case Studies */
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-study-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .case-study-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            border-color: rgba(255, 107, 157, 0.3);
+        }
+
+        .case-study-header h3 {
+            color: #ff6b9d;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .case-study-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .company-type, .timeline {
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .company-type {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+        }
+
+        .timeline {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .case-study-content h4 {
+            color: #ff9ff3;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .case-study-content p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #ff6b9d;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .result-item {
+            text-align: center;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .result-item:hover {
+            transform: scale(1.05);
+        }
+
+        .result-number {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            color: white;
+        }
+
+        .result-label {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        /* Experience Timeline */
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #ff6b9d;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(10px);
+            border-left-color: #ff9ff3;
+        }
+
+        .timeline-item h3 {
+            color: #ff6b9d;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .timeline-item .company {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline-item .period {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .timeline-item p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 107, 157, 0.1);
+            transform: translateY(-5px);
+            border-color: rgba(255, 107, 157, 0.3);
+            color: white;
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .contact-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #ff6b9d;
+        }
+
+        .contact-detail {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu Enhancements */
+        .mobile-menu-toggle {
+            display: none;
+            background: rgba(255, 107, 157, 0.2);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            color: #ff6b9d;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(255, 107, 157, 0.3);
+        }
+
+        /* Enhanced Mobile Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .section-title {
+                font-size: 3rem;
+            }
+
+            .hero-graphics {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(26, 26, 46, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 2rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                z-index: 999;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .nav-links.active {
+                display: flex;
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-bottom: 0.5rem;
+            }
+
+            .hero-section {
+                padding-top: 120px;
+                min-height: 100vh;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.8rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .availability-badge {
+                margin-bottom: 1.5rem;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+                padding: 12px 24px;
+                font-size: 0.95rem;
+            }
+
+            .hero-graphics {
+                height: 250px;
+                order: -1;
+            }
+
+            .geometric-shape {
+                filter: blur(0.5px);
+            }
+
+            .shape-1 {
+                width: 120px;
+                height: 120px;
+                top: 30px;
+                left: 20px;
+            }
+
+            .shape-2 {
+                width: 100px;
+                height: 100px;
+                bottom: 50px;
+                right: 20px;
+            }
+
+            .shape-3 {
+                width: 60px;
+                height: 60px;
+                top: 80px;
+                right: 80px;
+            }
+
+            .shape-4 {
+                width: 80px;
+                height: 80px;
+                bottom: 120px;
+                left: 30px;
+            }
+
+            .shape-5 {
+                width: 50px;
+                height: 50px;
+                top: 40px;
+                right: 40px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                line-height: 1.2;
+                margin-bottom: 0.75rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+                line-height: 1.7;
+                margin-bottom: 1.25rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.2rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+                line-height: 1.3;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .skill-category {
+                padding: 2rem;
+            }
+
+            .skill-category h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1.25rem;
+                text-align: center;
+            }
+
+            .skill-list li {
+                padding: 0.6rem 0;
+                font-size: 0.95rem;
+            }
+
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .case-study-card {
+                padding: 2rem;
+            }
+
+            .case-study-header h3 {
+                font-size: 1.2rem;
+            }
+
+            .case-study-meta {
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .company-type, .timeline {
+                padding: 4px 12px;
+                font-size: 0.75rem;
+            }
+
+            .case-study-content h4 {
+                font-size: 1rem;
+                margin-bottom: 0.6rem;
+            }
+
+            .case-study-content p {
+                padding: 1rem;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            .results-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 0.75rem;
+            }
+
+            .result-item {
+                padding: 1rem 0.5rem;
+                min-width: 100px;
+            }
+
+            .result-number {
+                font-size: 1.2rem;
+                margin-bottom: 0.2rem;
+            }
+
+            .result-label {
+                font-size: 0.65rem;
+                line-height: 1.1;
+            }
+
+            .experience-timeline {
+                margin: 0;
+            }
+
+            .timeline-item {
+                padding: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            .timeline-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .timeline-item .company {
+                font-size: 1rem;
+            }
+
+            .timeline-item .period {
+                font-size: 0.85rem;
+            }
+
+            .timeline-item p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                max-width: 400px;
+            }
+
+            .contact-card {
+                padding: 2rem;
+            }
+
+            .contact-icon {
+                font-size: 2.5rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .contact-label {
+                font-size: 1.1rem;
+            }
+
+            .contact-detail {
+                font-size: 0.85rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-content {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+                line-height: 1.1;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-graphics {
+                height: 200px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-card {
+                padding: 1.25rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .skill-category {
+                padding: 1.5rem;
+            }
+
+            .case-study-card {
+                padding: 1.5rem;
+            }
+
+            .timeline-item {
+                padding: 1.5rem;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            .result-item {
+                padding: 0.75rem 0.25rem;
+            }
+
+            .result-number {
+                font-size: 1rem;
+            }
+
+            .result-label {
+                font-size: 0.6rem;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .availability-badge {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            .container {
+                padding: 0 0.75rem;
+            }
+        }
+
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .nav-item:hover,
+            .stat-card:hover,
+            .skill-category:hover,
+            .case-study-card:hover,
+            .timeline-item:hover,
+            .contact-card:hover {
+                transform: none;
+            }
+
+            .nav-item:active,
+            .stat-card:active,
+            .skill-category:active,
+            .case-study-card:active,
+            .contact-card:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease;
+            }
+
+            .cta-button:active {
+                transform: scale(0.95);
+            }
+        }
+
+        /* Improved focus states for mobile accessibility */
+        @media (max-width: 768px) {
+            a:focus,
+            button:focus {
+                outline: 3px solid #ff6b9d;
+                outline-offset: 2px;
+            }
+
+            .nav-links a:focus {
+                background: rgba(255, 107, 157, 0.2);
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #ff6b9d;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="logo">HEATHER CREEL</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>ALWAYS READY TO MAKE YOUR BUSINESS BETTER</h1>
+                    <p class="hero-subtitle">From Service Industry to Systems Leadership: A Story of Determination</p>
+                    <div class="availability-badge">Available for VP Business Systems conversations</div>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="cta-button cta-primary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-graphics">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                    <div class="geometric-shape shape-4"></div>
+                    <div class="geometric-shape shape-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT ME</h2>
+                <p class="section-subtitle">22 years of turning challenges into opportunities</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p><strong>From Maryland to Tennessee:</strong> I'm a Maryland native who moved to Florida where I lived for 10 years, had both my kids, and have been calling Tennessee home since 2011. I've been organizing things my entire life - as a kid, I was the one planning elaborate backyard talent shows and convincing my dad to make homework copies so we could "play school." My siblings had a different word for it - bossy.</p>
+                    
+                    <p><strong>The Unconventional Path:</strong> I took the road less traveled - skipping college right after high school, working as a waitress, and earning my degree while juggling work and raising two kids. My corporate break came when a fellow waitress mentioned her company had an opening.</p>
+                    
+                    <p><strong>Finding My Groove:</strong> They took a chance on me, and I worked my way up, refining processes and really finding my groove in operations. It wasn't until I moved to Tennessee and joined ADP that I got my first real exposure to new technologies like Salesforce.</p>
+                    
+                    <p><strong>Life Today:</strong> Now I'm living in Tennessee with my husband (married since 2004), our two teenagers, and our two dogs - a senior and a puppy. When I'm not optimizing business systems, you'll find me enjoying silly humor, sleeping in, planning travel adventures, tending to my garden, or working on puzzles.</p>
+                    
+                    <p>I'm passionate about leveraging technology to solve real business problems and helping others navigate their career journeys. I embrace cutting-edge tools including AI to deliver results efficiently - even this website was created through AI collaboration. Currently seeking my next challenge as a VP of Business Systems where I can continue transforming how organizations work.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">22</span>
+                        <span class="stat-label">Years Corporate Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Led</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$500K+</span>
+                        <span class="stat-label">Annual Savings</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">People Coordinated</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">CORE COMPETENCIES</h2>
+                <p class="section-subtitle">Technical expertise meets strategic leadership</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Business Systems</h3>
+                    <ul class="skill-list">
+                        <li>Salesforce Administration & Optimization</li>
+                        <li>CRM Strategy & Implementation</li>
+                        <li>Process Automation & Workflow Design</li>
+                        <li>System Integration & Data Migration</li>
+                        <li>Data Analytics & Reporting</li>
+                        <li>Business Requirements Analysis</li>
+                        <li>System Configuration & Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Leadership & Strategy</h3>
+                    <ul class="skill-list">
+                        <li>Strategic Planning & Vision Development</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Change Management & Organizational Development</li>
+                        <li>Vendor Management & Contract Negotiation</li>
+                        <li>Team Development & Mentoring</li>
+                        <li>Budget Management & ROI Analysis</li>
+                        <li>Stakeholder Alignment & Communication</li>
+                        <li>Digital Transformation Implementation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Salesforce (Certified Application Architect - 10 Certifications)</li>
+                        <li>Google Workspace & Microsoft Office</li>
+                        <li>Marketing Automation: Marketo, Pardot</li>
+                        <li>Sales Intelligence: ZoomInfo, Sales Navigator</li>
+                        <li>Revenue Operations: Apttus CLM, Zuora CPQ</li>
+                        <li>Sales Enablement: Gong, SalesLoft</li>
+                        <li>Support & Communication: Five9, Zendesk</li>
+                        <li>Territory & Mapping Tools</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Project Management</h3>
+                    <ul class="skill-list">
+                        <li>Strategic Initiatives: Digital Transformation & Organizational Restructuring</li>
+                        <li>System Projects: CRM Implementation, Small-scale Data Migration & Integration</li>
+                        <li>Cross-functional Leadership: Sales-Marketing-IT Collaboration</li>
+                        <li>Event Management: Large-scale Event Planning & System Go-live Coordination</li>
+                        <li>Budget Management: ROI Analysis & Vendor Contract Negotiations</li>
+                        <li>Stakeholder Management: Executive Relations & Matrix Team Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="section">
+            <div class="section-header">
+                <h2 class="section-title">CASE STUDIES</h2>
+                <p class="section-subtitle">Real projects, measurable results, confidential details protected</p>
+            </div>
+            
+            <div class="case-studies-grid">
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>CRM Data Consolidation</h3>
+                        <div class="case-study-meta">
+                            <span class="company-type">Mid-Market Financial Services</span>
+                            <span class="timeline">4-month project</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="challenge">
+                            <h4>🎯 Challenge</h4>
+                            <p>Massive data quality crisis affecting 75 sales reps. Each company had 4-6 duplicate lead records creating daily inefficiencies and eliminating visibility into various touchpoints within target organizations. Sales reps spent 20+ minutes daily just trying to understand account relationships and contact history.</p>
+                        </div>
+                        
+                        <div class="solution">
+                            <h4>⚡ Solution</h4>
+                            <p>Designed and implemented a phased data consolidation strategy over multiple cycles. Consolidated duplicate lead records into unified account structures, established proper account hierarchies, and created clear visibility into all organizational touchpoints. Implemented data governance processes to prevent future duplication.</p>
+                        </div>
+                        
+                        <div class="results">
+                            <h4>📈 Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">$470K+</span>
+                                    <span class="result-label">Annual Savings</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">6,250</span>
+                                    <span class="result-label">Hours Saved/Year</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">75+</span>
+                                    <span class="result-label">Reps Impacted</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>CRM & Okta Integration</h3>
+                        <div class="case-study-meta">
+                            <span class="company-type">Enterprise SaaS Platform</span>
+                            <span class="timeline">8-month project</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="challenge">
+                            <h4>🎯 Challenge</h4>
+                            <p>Access chaos across the organization - users with identical roles had inconsistent permissions, role changes left people with accumulated access they shouldn't have, and hundreds of ungrouped permission sets with 20+ profiles created a security and management nightmare requiring manual user setup for every new hire.</p>
+                        </div>
+                        
+                        <div class="solution">
+                            <h4>⚡ Solution</h4>
+                            <p>Led comprehensive access architecture redesign: identified user personas, consolidated hundreds of permission sets into logical groups, aligned vernacular across Workday-Okta-CRM systems, and built automated user provisioning with custom CRM automation for edge cases Okta couldn't handle. Extensive UAT ensured zero critical access loss during transition.</p>
+                        </div>
+                        
+                        <div class="results">
+                            <h4>📈 Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">85%</span>
+                                    <span class="result-label">Fewer Setup Tickets</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">100%</span>
+                                    <span class="result-label">Access Consistency</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">Zero</span>
+                                    <span class="result-label">Manual Setups</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>Partner Portal Implementation</h3>
+                        <div class="case-study-meta">
+                            <span class="company-type">Financial Services Company</span>
+                            <span class="timeline">2-month project</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="challenge">
+                            <h4>🎯 Challenge</h4>
+                            <p>Referral partners had zero visibility after submitting leads - they couldn't track deal progression, identify where they could help accelerate stuck deals, or know if their submissions were being actioned. This created partner frustration and missed opportunities for collaboration.</p>
+                        </div>
+                        
+                        <div class="solution">
+                            <h4>⚡ Solution</h4>
+                            <p>Implemented a private partner portal integrated with our CRM system. Partners could submit leads, track status in real-time, monitor conversion to opportunities, see assigned sales reps, and view current opportunity stages. Built with role-based access ensuring data privacy between partner companies.</p>
+                        </div>
+                        
+                        <div class="results">
+                            <h4>📈 Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-number">100%</span>
+                                    <span class="result-label">Deal Visibility</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">Zero</span>
+                                    <span class="result-label">Partner Conflicts</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">Automated</span>
+                                    <span class="result-label">Status Updates</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2 class="section-title">EXPERIENCE</h2>
+                <p class="section-subtitle">22 years of progressive leadership and technical growth</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <h3>Business Systems Director</h3>
+                    <div class="company">Pantheon</div>
+                    <div class="period">2021 - 2024 (3+ years)</div>
+                    <p>Led enterprise-wide digital transformation initiatives, partnering with IT to implement automated systems that drove operational excellence. Implemented agile structure and operating model for Salesforce Admin/Developer Squad, enhancing operational efficiencies and increasing successful production deployments by 30%. Built and managed teams up to 5 members, focusing on strategic systems optimization and process automation. (Joined after brief consulting role at Wipro)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Business Systems & Operations Leadership</h3>
+                    <div class="company">Fleetcor (formerly Comdata)</div>
+                    <div class="period">2014 - 2021</div>
+                    <p>Advanced through progressive leadership roles during Comdata's acquisition by Fleetcor. Coordinated large-scale sales events for teams of 75-150 members and matrix-managed international teams of up to 20 members across multiple geographies in Russia. At one point managed 1 people manager, with largest direct team reaching 5 members. Built and managed cross-functional teams across departments.</p>
+                    
+                    <p>Led two major CRM initiatives: consolidated duplicate lead records into unified account structure for 75-person sales team ($470K+ annual savings), and implemented Sales Navigator integration improving contact success rates by 25%. Combined impact delivered $500K+ in annual productivity gains.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Operations & Systems Roles</h3>
+                    <div class="company">ADP</div>
+                    <div class="period">2011 - 2014</div>
+                    <p>Gained first exposure to advanced technologies like Salesforce while building operational excellence skills. Coordinated sales events for teams of 40 members while focusing on process improvement and system optimization, developing the technical foundation that would drive future leadership success in business systems roles.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Early Career & Foundation</h3>
+                    <div class="company">Axsa Document Solutions</div>
+                    <div class="period">2003 - 2011</div>
+                    <p>Started corporate career after non-traditional path, quickly demonstrating natural aptitude for process improvement and operational excellence. Earned degree while working full-time and raising two children, developing strong work ethic and problem-solving skills that became foundation for future leadership success.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">LET'S CONNECT</h2>
+                <p class="section-subtitle">Ready to drive your next business systems transformation? I'm currently open to conversations about VP Business Systems opportunities and would love to discuss how we can work together.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="mailto:heather.creel2025@gmail.com" class="contact-card" aria-label="Send email to Heather Creel">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-label">Email Me</div>
+                    <div class="contact-detail">heather.creel2025@gmail.com</div>
+                </a>
+                <a href="https://www.linkedin.com/in/heather-creel-tn/" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="View Heather Creel's LinkedIn profile">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-detail">View Profile</div>
+                </a>
+                <a href="https://github.com/heather-creel/heather-creel.github.io/raw/main/Heather%20Creel%20Resume%20-%20June%202025%20-%20Web.pdf" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Download Heather Creel's resume">
+                    <div class="contact-icon">📄</div>
+                    <div class="contact-label">Resume</div>
+                    <div class="contact-detail">Download PDF</div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Heather Creel. Website designed collaboratively with AI assistance.</p>
+        </div>
+    </footer>
