@@ -1043,28 +1043,82 @@
             }
         }
 
-        /* Touch-friendly interactions */
-        @media (hover: none) and (pointer: coarse) {
-            .nav-item:hover,
-            .stat-card:hover,
-            .skill-category:hover,
-            .case-study-card:hover,
-            .timeline-item:hover,
-            .contact-card:hover {
-                transform: none;
+        /* Additional Mobile Optimizations */
+        @media (max-width: 360px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+                line-height: 1.1;
             }
 
-            .nav-item:active,
-            .stat-card:active,
-            .skill-category:active,
-            .case-study-card:active,
-            .contact-card:active {
-                transform: scale(0.98);
-                transition: transform 0.1s ease;
+            .section-title {
+                font-size: 1.6rem;
             }
 
-            .cta-button:active {
-                transform: scale(0.95);
+            .hero-graphics {
+                height: 150px;
+            }
+
+            .skill-category,
+            .case-study-card,
+            .timeline-item,
+            .contact-card {
+                padding: 1.25rem;
+            }
+
+            .result-item {
+                padding: 0.75rem 0.25rem;
+            }
+
+            .result-number {
+                font-size: 0.9rem;
+            }
+
+            .result-label {
+                font-size: 0.55rem;
+            }
+
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* Landscape mobile optimization */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero-section {
+                min-height: auto;
+                padding: 120px 0 60px;
+            }
+
+            .hero-graphics {
+                height: 200px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        /* High DPI displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .geometric-shape {
+                filter: blur(0.5px);
+            }
+        }
+
+        /* Touch-friendly improvements */
+        @media (pointer: coarse) {
+            .nav-links a,
+            .cta-button,
+            .contact-card {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .mobile-menu-toggle {
+                min-width: 44px;
+                min-height: 44px;
             }
         }
 
