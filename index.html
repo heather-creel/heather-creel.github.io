@@ -413,7 +413,70 @@
             font-weight: bold;
         }
 
-        /* Case Studies */
+        <!-- Certifications Section -->
+        .certifications-section {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .certification-category {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .certification-category:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            border-color: rgba(255, 107, 157, 0.3);
+        }
+
+        .certification-category h3 {
+            color: #ff6b9d;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .cert-badge {
+            background: rgba(255, 107, 157, 0.1);
+            border: 1px solid rgba(255, 107, 157, 0.3);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.5rem 0.25rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cert-badge:hover {
+            background: rgba(255, 107, 157, 0.2);
+            border-color: rgba(255, 107, 157, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .cert-count {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 0.5rem;
+        }
         .case-studies-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -857,9 +920,24 @@
                 font-size: 0.95rem;
             }
 
-            .case-studies-grid {
+            .certifications-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+            }
+
+            .certification-category {
+                padding: 2rem;
+            }
+
+            .certification-category h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .cert-badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+                margin: 0.25rem;
             }
 
             .case-study-card {
@@ -1185,6 +1263,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -1311,6 +1390,37 @@
                         <li>Budget Management: ROI Analysis & Vendor Contract Negotiations</li>
                         <li>Stakeholder Management: Executive Relations & Matrix Team Leadership</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="section-header">
+                <h2 class="section-title">CERTIFICATIONS</h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="certification-category">
+                    <h3>Salesforce <span class="cert-count">10</span></h3>
+                    <div class="cert-badge">Application Architect</div>
+                    <div class="cert-badge">Certified AI Associate</div>
+                    <div class="cert-badge">Data Architecture & Management Designer</div>
+                    <div class="cert-badge">Sharing & Visibility Designer</div>
+                    <div class="cert-badge">Sales Cloud Consultant</div>
+                    <div class="cert-badge">Service Cloud Consultant</div>
+                    <div class="cert-badge">Platform Developer I</div>
+                    <div class="cert-badge">Platform App Builder</div>
+                    <div class="cert-badge">Advanced Administrator</div>
+                    <div class="cert-badge">Certified Salesforce Administrator ADM201</div>
+                </div>
+                <div class="certification-category">
+                    <h3>Leadership & Project Management</h3>
+                    <div class="cert-badge">Agile Leader Certification SSGI</div>
+                    <div class="cert-badge">Certified Product Owner Scrum Professional (CPOSP)</div>
+                    <div class="cert-badge">Change Management Certification - eCornell</div>
+                    <div class="cert-badge">Lean Data Fundamentals</div>
                 </div>
             </div>
         </section>
