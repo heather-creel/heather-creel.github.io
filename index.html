@@ -499,6 +499,10 @@
             background: linear-gradient(135deg, #ff6b9d, #c44569);
             border-radius: 15px;
             transition: transform 0.3s ease;
+            min-width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .result-item:hover {
@@ -511,6 +515,8 @@
             font-weight: 700;
             margin-bottom: 0.3rem;
             color: white;
+            word-break: break-word;
+            hyphens: auto;
         }
 
         .result-label {
@@ -518,6 +524,8 @@
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.2;
             font-weight: 500;
+            word-break: break-word;
+            hyphens: auto;
         }
 
         /* Experience Timeline */
@@ -884,13 +892,14 @@
             }
 
             .results-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
                 gap: 0.75rem;
             }
 
             .result-item {
                 padding: 1rem 0.5rem;
-                min-width: 100px;
+                min-width: 110px;
+                min-height: 80px;
             }
 
             .result-number {
@@ -901,6 +910,8 @@
             .result-label {
                 font-size: 0.65rem;
                 line-height: 1.1;
+                word-break: break-word;
+                overflow-wrap: break-word;
             }
 
             .experience-timeline {
