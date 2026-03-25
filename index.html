@@ -6,20 +6,20 @@
     <title>Heather Creel - GTM Systems Leader</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Heather Creel - From service industry to GTM Systems Leader. 22 years transforming operations through Salesforce expertise and strategic technology solutions. Currently available for Director and Sr. Director-Level conversations.">
-    <meta name="keywords" content="Revenue Systems, GTM Systems,  Salesforce, CRM, Digital Transformation, Operations, Salesforce Systems Leader, CRM & Marketing Automation Director, Business Technology Director, Revenue Systems Director, Sr. Director Revenue Systems, Business Operations Director, RevOps Director, Technology Leadership">
+    <meta name="description" content="Heather Creel - GTM Systems Director with 20+ years of experience leading people, programs, and Salesforce ecosystems at scale. Currently available for Director and Sr. Director-Level conversations.">
+    <meta name="keywords" content="Revenue Systems, GTM Systems, Salesforce, CRM, Digital Transformation, Operations, Salesforce Systems Leader, CRM & Marketing Automation Director, Business Technology Director, Revenue Systems Director, Sr. Director Revenue Systems, Business Operations Director, RevOps Director, Technology Leadership, Program Management">
     <meta name="author" content="Heather Creel">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Heather Creel - GTM Systems Leader">
-    <meta property="og:description" content="Driving strategic transformation through innovative technology solutions. Open to conversations about Director and Sr. Director-level opportunities.">
+    <meta property="og:description" content="GTM Systems Director — leading people, programs, and Salesforce ecosystems that drive revenue efficiency. Open to Director and Sr. Director-level conversations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://heather-creel.github.io">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Heather Creel - GTM Systems Leader">
-    <meta name="twitter:description" content="Driving strategic transformation through innovative technology solutions">
+    <meta name="twitter:description" content="GTM Systems Director — leading people, programs, and Salesforce ecosystems that drive revenue efficiency.">
     
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -321,6 +321,15 @@
             opacity: 0.9;
         }
 
+        .about-text p.highlight-block {
+            background: rgba(255, 107, 157, 0.08);
+            border-left: 3px solid #ff6b9d;
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            opacity: 1;
+        }
+
         .stats-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -418,6 +427,19 @@
             background: rgba(255, 255, 255, 0.02);
         }
 
+        .cert-context {
+            max-width: 780px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            font-size: 1.05rem;
+            line-height: 1.75;
+            opacity: 0.85;
+        }
+
+        .cert-context strong {
+            color: #ff9ff3;
+        }
+
         .certifications-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -466,6 +488,13 @@
             background: rgba(255, 107, 157, 0.2);
             border-color: rgba(255, 107, 157, 0.5);
             transform: translateY(-2px);
+        }
+
+        .cert-badge.featured {
+            background: rgba(255, 107, 157, 0.25);
+            border-color: rgba(255, 107, 157, 0.6);
+            color: #ff9ff3;
+            font-weight: 700;
         }
 
         .cert-count {
@@ -720,23 +749,13 @@
 
         /* Enhanced Mobile Responsive Design */
         @media (max-width: 1024px) {
-            .hero-text h1 {
-                font-size: 3.5rem;
-            }
-
-            .section-title {
-                font-size: 3rem;
-            }
-
-            .hero-graphics {
-                height: 400px;
-            }
+            .hero-text h1 { font-size: 3.5rem; }
+            .section-title { font-size: 3rem; }
+            .hero-graphics { height: 400px; }
         }
 
         @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: block;
-            }
+            .mobile-menu-toggle { display: block; }
 
             .nav-links {
                 display: none;
@@ -766,10 +785,7 @@
                 margin-bottom: 0.5rem;
             }
 
-            .hero-section {
-                padding-top: 120px;
-                min-height: 100vh;
-            }
+            .hero-section { padding-top: 120px; min-height: 100vh; }
 
             .hero-content {
                 grid-template-columns: 1fr;
@@ -777,436 +793,124 @@
                 text-align: center;
             }
 
-            .hero-text h1 {
-                font-size: 2.8rem;
-                line-height: 1.2;
-                margin-bottom: 1rem;
-            }
+            .hero-text h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 1rem; }
+            .hero-subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
 
-            .hero-subtitle {
-                font-size: 1.1rem;
-                margin-bottom: 1.5rem;
-            }
+            .availability-badge { margin-bottom: 1.5rem; padding: 10px 20px; font-size: 0.9rem; }
 
-            .availability-badge {
-                margin-bottom: 1.5rem;
-                padding: 10px 20px;
-                font-size: 0.9rem;
-            }
+            .cta-buttons { flex-direction: column; align-items: center; gap: 0.75rem; }
 
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 0.75rem;
-            }
+            .cta-button { width: 100%; max-width: 280px; text-align: center; padding: 12px 24px; font-size: 0.95rem; }
 
-            .cta-button {
-                width: 100%;
-                max-width: 280px;
-                text-align: center;
-                padding: 12px 24px;
-                font-size: 0.95rem;
-            }
+            .hero-graphics { height: 250px; order: -1; }
 
-            .hero-graphics {
-                height: 250px;
-                order: -1;
-            }
+            .shape-1 { width: 120px; height: 120px; top: 30px; left: 20px; }
+            .shape-2 { width: 100px; height: 100px; bottom: 50px; right: 20px; }
+            .shape-3 { width: 60px; height: 60px; top: 80px; right: 80px; }
+            .shape-4 { width: 80px; height: 80px; bottom: 120px; left: 30px; }
+            .shape-5 { width: 50px; height: 50px; top: 40px; right: 40px; }
 
-            .geometric-shape {
-                filter: blur(0.5px);
-            }
+            .section { padding: 60px 0; }
+            .section-header { margin-bottom: 3rem; }
+            .section-title { font-size: 2.2rem; line-height: 1.2; margin-bottom: 0.75rem; }
+            .section-subtitle { font-size: 1rem; padding: 0 1rem; }
 
-            .shape-1 {
-                width: 120px;
-                height: 120px;
-                top: 30px;
-                left: 20px;
-            }
+            .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .about-text p { font-size: 1rem; line-height: 1.7; margin-bottom: 1.25rem; }
 
-            .shape-2 {
-                width: 100px;
-                height: 100px;
-                bottom: 50px;
-                right: 20px;
-            }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+            .stat-card { padding: 1.5rem; }
+            .stat-number { font-size: 2.2rem; margin-bottom: 0.3rem; }
+            .stat-label { font-size: 0.8rem; line-height: 1.3; }
 
-            .shape-3 {
-                width: 60px;
-                height: 60px;
-                top: 80px;
-                right: 80px;
-            }
+            .skills-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .skill-category { padding: 2rem; }
+            .skill-category h3 { font-size: 1.2rem; margin-bottom: 1.25rem; text-align: center; }
+            .skill-list li { padding: 0.6rem 0; font-size: 0.95rem; }
 
-            .shape-4 {
-                width: 80px;
-                height: 80px;
-                bottom: 120px;
-                left: 30px;
-            }
+            .certifications-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .certification-category { padding: 2rem; }
+            .certification-category h3 { font-size: 1.2rem; margin-bottom: 1.25rem; }
+            .cert-badge { font-size: 0.8rem; padding: 6px 12px; margin: 0.25rem; }
 
-            .shape-5 {
-                width: 50px;
-                height: 50px;
-                top: 40px;
-                right: 40px;
-            }
+            .case-study-card { padding: 2rem; }
+            .case-study-header h3 { font-size: 1.2rem; }
+            .case-study-meta { gap: 0.75rem; margin-bottom: 1.5rem; }
+            .company-type, .timeline { padding: 4px 12px; font-size: 0.75rem; }
+            .case-study-content h4 { font-size: 1rem; margin-bottom: 0.6rem; }
+            .case-study-content p { padding: 1rem; font-size: 0.95rem; line-height: 1.5; }
 
-            .section {
-                padding: 60px 0;
-            }
+            .results-grid { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; }
+            .result-item { padding: 1rem 0.5rem; min-width: 110px; min-height: 80px; }
+            .result-number { font-size: 1.2rem; margin-bottom: 0.2rem; }
+            .result-label { font-size: 0.65rem; line-height: 1.1; word-break: break-word; overflow-wrap: break-word; }
 
-            .section-header {
-                margin-bottom: 3rem;
-            }
+            .experience-timeline { margin: 0; }
+            .timeline-item { padding: 2rem; margin: 1.5rem 0; }
+            .timeline-item h3 { font-size: 1.2rem; }
+            .timeline-item .company { font-size: 1rem; }
+            .timeline-item .period { font-size: 0.85rem; }
+            .timeline-item p { font-size: 0.95rem; line-height: 1.6; }
 
-            .section-title {
-                font-size: 2.2rem;
-                line-height: 1.2;
-                margin-bottom: 0.75rem;
-            }
+            .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; max-width: 400px; }
+            .contact-card { padding: 2rem; }
+            .contact-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+            .contact-label { font-size: 1.1rem; }
+            .contact-detail { font-size: 0.85rem; }
 
-            .section-subtitle {
-                font-size: 1rem;
-                padding: 0 1rem;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
-            }
-
-            .about-text p {
-                font-size: 1rem;
-                line-height: 1.7;
-                margin-bottom: 1.25rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 1.5rem;
-            }
-
-            .stat-card {
-                padding: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2.2rem;
-                margin-bottom: 0.3rem;
-            }
-
-            .stat-label {
-                font-size: 0.8rem;
-                line-height: 1.3;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .skill-category {
-                padding: 2rem;
-            }
-
-            .skill-category h3 {
-                font-size: 1.2rem;
-                margin-bottom: 1.25rem;
-                text-align: center;
-            }
-
-            .skill-list li {
-                padding: 0.6rem 0;
-                font-size: 0.95rem;
-            }
-
-            .certifications-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .certification-category {
-                padding: 2rem;
-            }
-
-            .certification-category h3 {
-                font-size: 1.2rem;
-                margin-bottom: 1.25rem;
-            }
-
-            .cert-badge {
-                font-size: 0.8rem;
-                padding: 6px 12px;
-                margin: 0.25rem;
-            }
-
-            .case-study-card {
-                padding: 2rem;
-            }
-
-            .case-study-header h3 {
-                font-size: 1.2rem;
-            }
-
-            .case-study-meta {
-                gap: 0.75rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .company-type, .timeline {
-                padding: 4px 12px;
-                font-size: 0.75rem;
-            }
-
-            .case-study-content h4 {
-                font-size: 1rem;
-                margin-bottom: 0.6rem;
-            }
-
-            .case-study-content p {
-                padding: 1rem;
-                font-size: 0.95rem;
-                line-height: 1.5;
-            }
-
-            .results-grid {
-                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-                gap: 0.75rem;
-            }
-
-            .result-item {
-                padding: 1rem 0.5rem;
-                min-width: 110px;
-                min-height: 80px;
-            }
-
-            .result-number {
-                font-size: 1.2rem;
-                margin-bottom: 0.2rem;
-            }
-
-            .result-label {
-                font-size: 0.65rem;
-                line-height: 1.1;
-                word-break: break-word;
-                overflow-wrap: break-word;
-            }
-
-            .experience-timeline {
-                margin: 0;
-            }
-
-            .timeline-item {
-                padding: 2rem;
-                margin: 1.5rem 0;
-            }
-
-            .timeline-item h3 {
-                font-size: 1.2rem;
-            }
-
-            .timeline-item .company {
-                font-size: 1rem;
-            }
-
-            .timeline-item .period {
-                font-size: 0.85rem;
-            }
-
-            .timeline-item p {
-                font-size: 0.95rem;
-                line-height: 1.6;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                max-width: 400px;
-            }
-
-            .contact-card {
-                padding: 2rem;
-            }
-
-            .contact-icon {
-                font-size: 2.5rem;
-                margin-bottom: 0.75rem;
-            }
-
-            .contact-label {
-                font-size: 1.1rem;
-            }
-
-            .contact-detail {
-                font-size: 0.85rem;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            .nav-content {
-                padding: 0 1rem;
-            }
+            .container { padding: 0 1rem; }
+            .nav-content { padding: 0 1rem; }
         }
 
         @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 2.2rem;
-                line-height: 1.1;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .hero-graphics {
-                height: 200px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .stat-card {
-                padding: 1.25rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .skill-category {
-                padding: 1.5rem;
-            }
-
-            .case-study-card {
-                padding: 1.5rem;
-            }
-
-            .timeline-item {
-                padding: 1.5rem;
-            }
-
-            .results-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 0.5rem;
-            }
-
-            .result-item {
-                padding: 0.75rem 0.25rem;
-            }
-
-            .result-number {
-                font-size: 1rem;
-            }
-
-            .result-label {
-                font-size: 0.6rem;
-            }
-
-            .cta-button {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-            }
-
-            .availability-badge {
-                padding: 8px 16px;
-                font-size: 0.85rem;
-            }
-
-            .container {
-                padding: 0 0.75rem;
-            }
+            .hero-text h1 { font-size: 2.2rem; line-height: 1.1; }
+            .section-title { font-size: 1.8rem; }
+            .hero-graphics { height: 200px; }
+            .stats-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .stat-card { padding: 1.25rem; }
+            .stat-number { font-size: 2rem; }
+            .skill-category { padding: 1.5rem; }
+            .case-study-card { padding: 1.5rem; }
+            .timeline-item { padding: 1.5rem; }
+            .results-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            .result-item { padding: 0.75rem 0.25rem; }
+            .result-number { font-size: 1rem; }
+            .result-label { font-size: 0.6rem; }
+            .cta-button { padding: 10px 20px; font-size: 0.9rem; }
+            .availability-badge { padding: 8px 16px; font-size: 0.85rem; }
+            .container { padding: 0 0.75rem; }
         }
 
         @media (max-width: 360px) {
-            .hero-text h1 {
-                font-size: 1.8rem;
-                line-height: 1.1;
-            }
-
-            .section-title {
-                font-size: 1.6rem;
-            }
-
-            .hero-graphics {
-                height: 150px;
-            }
-
-            .skill-category,
-            .case-study-card,
-            .timeline-item,
-            .contact-card {
-                padding: 1.25rem;
-            }
-
-            .result-item {
-                padding: 0.75rem 0.25rem;
-            }
-
-            .result-number {
-                font-size: 0.9rem;
-            }
-
-            .result-label {
-                font-size: 0.55rem;
-            }
-
-            .container {
-                padding: 0 0.5rem;
-            }
+            .hero-text h1 { font-size: 1.8rem; line-height: 1.1; }
+            .section-title { font-size: 1.6rem; }
+            .hero-graphics { height: 150px; }
+            .skill-category, .case-study-card, .timeline-item, .contact-card { padding: 1.25rem; }
+            .result-item { padding: 0.75rem 0.25rem; }
+            .result-number { font-size: 0.9rem; }
+            .result-label { font-size: 0.55rem; }
+            .container { padding: 0 0.5rem; }
         }
 
         @media (max-height: 500px) and (orientation: landscape) {
-            .hero-section {
-                min-height: auto;
-                padding: 120px 0 60px;
-            }
-
-            .hero-graphics {
-                height: 200px;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-        }
-
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            .geometric-shape {
-                filter: blur(0.5px);
-            }
+            .hero-section { min-height: auto; padding: 120px 0 60px; }
+            .hero-graphics { height: 200px; }
+            .section { padding: 60px 0; }
         }
 
         @media (pointer: coarse) {
-            .nav-links a,
-            .cta-button,
-            .contact-card {
+            .nav-links a, .cta-button, .contact-card {
                 min-height: 44px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-
-            .mobile-menu-toggle {
-                min-width: 44px;
-                min-height: 44px;
-            }
+            .mobile-menu-toggle { min-width: 44px; min-height: 44px; }
         }
 
         @media (max-width: 768px) {
-            a:focus,
-            button:focus {
-                outline: 3px solid #ff6b9d;
-                outline-offset: 2px;
-            }
-
-            .nav-links a:focus {
-                background: rgba(255, 107, 157, 0.2);
-            }
+            a:focus, button:focus { outline: 3px solid #ff6b9d; outline-offset: 2px; }
+            .nav-links a:focus { background: rgba(255, 107, 157, 0.2); }
         }
 
         .fade-in {
@@ -1220,9 +924,7 @@
             transform: translateY(0);
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         .skip-link {
             position: absolute;
@@ -1236,9 +938,7 @@
             z-index: 10000;
         }
 
-        .skip-link:focus {
-            top: 6px;
-        }
+        .skip-link:focus { top: 6px; }
     </style>
 </head>
 <body>
@@ -1261,11 +961,15 @@
     </nav>
 
     <div class="container">
+        <!-- ═══════════════════════════════════════════
+             HERO — reframed: program/people leader,
+             certs support leadership (not a job title)
+        ════════════════════════════════════════════ -->
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>DRIVING Revenue EFFICIENCY THROUGH SALESFORCE EXCELLENCE</h1>
-                    <p class="hero-subtitle">Salesforce Application Architect specializing in GTM Systems</p>
+                    <h1>DRIVING Revenue EFFICIENCY THROUGH GTM SYSTEMS LEADERSHIP</h1>
+                    <p class="hero-subtitle">Program &amp; People Leader — building and running the teams, roadmaps, and Salesforce ecosystems that power revenue growth</p>
                     <div class="availability-badge">Available for Director and Sr. Director GTM Systems conversations</div>
                     <div class="cta-buttons">
                         <a href="#contact" class="cta-button cta-primary">Let's Connect</a>
@@ -1281,6 +985,10 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════════
+             ABOUT — updated "My Leadership Approach"
+             block to reframe certs as informing leadership
+        ════════════════════════════════════════════ -->
         <section id="about" class="section">
             <div class="section-header">
                 <h2 class="section-title">ABOUT ME</h2>
@@ -1297,7 +1005,7 @@
                     
                     <p><strong>Life Today:</strong> Now I'm living in Tennessee with my husband (married since 2004), our two teenagers, and our two dogs - a senior and a puppy. When I'm not optimizing GTM systems, you'll find me enjoying silly humor, sleeping in, planning travel adventures, tending to my garden, or working on puzzles.</p>
                     
-                    <p><strong>My Revenue Focus:</strong> Specializing in the Salesforce backbone of Revenue operations—from lead management and sales automation to partner ecosystems and cross-system integrations.</p>
+                    <p class="highlight-block"><strong>My Leadership Approach:</strong> I lead the people, programs, and strategic roadmaps that make GTM systems work at scale. My 10 Salesforce certifications — including Application Architect — give me the technical credibility to earn my team's trust, hold vendors accountable, and make better architectural decisions. They inform how I lead; they don't define the work I want to do.</p>
                     
                     <p>I'm passionate about leveraging technology to solve real business problems and helping others navigate their career journeys. I embrace cutting-edge tools, including AI, to deliver results efficiently - even this website was created through AI collaboration. Currently seeking my next challenge as a Director or Sr. Director, where I can continue transforming how organizations work.</p>
                 </div>
@@ -1323,6 +1031,10 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════════
+             SKILLS — GTM Systems column reordered:
+             strategy/program items lead, hands-on last
+        ════════════════════════════════════════════ -->
         <section id="skills" class="section">
             <div class="section-header">
                 <h2 class="section-title">CORE COMPETENCIES</h2>
@@ -1331,27 +1043,27 @@
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>GTM Systems</h3>
+                    <h3>GTM Systems Leadership</h3>
                     <ul class="skill-list">
-                        <li>Salesforce Administration & Optimization</li>
-                        <li>CRM Strategy & Implementation</li>
-                        <li>Process Automation & Workflow Design</li>
-                        <li>System Integration & Data Migration</li>
-                        <li>Data Analytics & Reporting</li>
-                        <li>Business Requirements Analysis</li>
-                        <li>System Configuration & Optimization</li>
+                        <li>CRM Strategy, Roadmap &amp; Program Ownership</li>
+                        <li>Business Requirements Analysis &amp; Prioritization</li>
+                        <li>Vendor Evaluation &amp; Contract Negotiation</li>
+                        <li>System Integration &amp; Data Migration Oversight</li>
+                        <li>Process Automation &amp; Workflow Design</li>
+                        <li>Data Analytics, Reporting &amp; KPI Frameworks</li>
+                        <li>Salesforce Platform Administration &amp; Optimization</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Leadership & Strategy</h3>
+                    <h3>Leadership &amp; Strategy</h3>
                     <ul class="skill-list">
-                        <li>Strategic Planning & Vision Development</li>
+                        <li>People Leadership &amp; Team Development</li>
+                        <li>Strategic Planning &amp; Vision Development</li>
                         <li>Cross-functional Collaboration</li>
-                        <li>Change Management & Organizational Development</li>
-                        <li>Vendor Management & Contract Negotiation</li>
-                        <li>Team Development & Mentoring</li>
-                        <li>Budget Management & ROI Analysis</li>
-                        <li>Stakeholder Alignment & Communication</li>
+                        <li>Change Management &amp; Organizational Development</li>
+                        <li>Vendor Management &amp; Contract Negotiation</li>
+                        <li>Budget Management &amp; ROI Analysis</li>
+                        <li>Stakeholder Alignment &amp; Executive Communication</li>
                         <li>Digital Transformation Implementation</li>
                     </ul>
                 </div>
@@ -1359,42 +1071,52 @@
                     <h3>Technical Platforms</h3>
                     <ul class="skill-list">
                         <li>Salesforce (Certified Application Architect - 10 Certifications)</li>
-                        <li>Google Workspace & Microsoft Office</li>
+                        <li>Google Workspace &amp; Microsoft Office</li>
                         <li>Marketing Automation: Marketo, Pardot</li>
                         <li>Sales Intelligence: ZoomInfo, Sales Navigator</li>
                         <li>GTM Operations: Apttus CLM, Zuora CPQ</li>
                         <li>Sales Enablement: Gong, SalesLoft</li>
-                        <li>Support & Communication: Five9, Zendesk, LeanData</li>
-                        <li>Territory & Mapping Tools</li>
+                        <li>Support &amp; Communication: Five9, Zendesk, LeanData</li>
+                        <li>Territory &amp; Mapping Tools</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Project Management</h3>
+                    <h3>Program Management</h3>
                     <ul class="skill-list">
-                        <li>Strategic Initiatives: Digital Transformation & Organizational Restructuring</li>
-                        <li>System Projects: CRM Implementation, Small-scale Data Migration & Integration</li>
-                        <li>Cross-functional Leadership: Sales-Marketing-IT Collaboration</li>
-                        <li>Event Management: Large-scale Event Planning & System Go-live Coordination</li>
-                        <li>Budget Management: ROI Analysis & Vendor Contract Negotiations</li>
-                        <li>Stakeholder Management: Executive Relations & Matrix Team Leadership</li>
+                        <li>Agile Team Structure &amp; Operating Model Design</li>
+                        <li>Cross-functional Program &amp; Initiative Leadership</li>
+                        <li>CRM Implementation &amp; System Go-live Coordination</li>
+                        <li>Digital Transformation &amp; Organizational Restructuring</li>
+                        <li>Large-scale Event &amp; Stakeholder Management</li>
+                        <li>Executive Relations &amp; Matrix Team Leadership</li>
+                        <li>Budget Management &amp; Vendor Contract Negotiations</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════════
+             CERTIFICATIONS — added framing paragraph
+             clarifying certs inform leadership, not a
+             signal of wanting to be the hands-on architect
+        ════════════════════════════════════════════ -->
         <section id="certifications" class="section certifications-section">
             <div class="section-header">
                 <h2 class="section-title">CERTIFICATIONS</h2>
                 <p class="section-subtitle">Continuous learning and professional development</p>
             </div>
+
+            <p class="cert-context">
+                10 Salesforce certifications — including <strong>Application Architect</strong> — give me the vocabulary, credibility, and judgment to lead technical teams, evaluate solutions, challenge vendors, and make smarter platform decisions. These credentials inform how I lead programs. They're not a signal that I want to be the one writing the code.
+            </p>
             
             <div class="certifications-grid">
                 <div class="certification-category">
                     <h3>Salesforce <span class="cert-count">10</span></h3>
-                    <div class="cert-badge">Application Architect</div>
+                    <div class="cert-badge featured">Application Architect</div>
                     <div class="cert-badge">Certified AI Associate</div>
-                    <div class="cert-badge">Data Architecture & Management Designer</div>
-                    <div class="cert-badge">Sharing & Visibility Designer</div>
+                    <div class="cert-badge">Data Architecture &amp; Management Designer</div>
+                    <div class="cert-badge">Sharing &amp; Visibility Designer</div>
                     <div class="cert-badge">Sales Cloud Consultant</div>
                     <div class="cert-badge">Service Cloud Consultant</div>
                     <div class="cert-badge">Platform Developer I</div>
@@ -1403,7 +1125,7 @@
                     <div class="cert-badge">Certified Salesforce Administrator ADM201</div>
                 </div>
                 <div class="certification-category">
-                    <h3>Leadership & Project Management</h3>
+                    <h3>Leadership &amp; Project Management</h3>
                     <div class="cert-badge">Agile Leader Certification SSGI</div>
                     <div class="cert-badge">Certified Product Owner Scrum Professional (CPOSP)</div>
                     <div class="cert-badge">Change Management Certification - eCornell</div>
@@ -1412,6 +1134,7 @@
             </div>
         </section>
 
+        <!-- Case Studies — unchanged -->
         <section id="case-studies" class="section">
             <div class="section-header">
                 <h2 class="section-title">CASE STUDIES</h2>
@@ -1427,18 +1150,15 @@
                             <span class="timeline">4-month project</span>
                         </div>
                     </div>
-                    
                     <div class="case-study-content">
                         <div class="challenge">
                             <h4>🎯 Challenge</h4>
                             <p>Massive data quality crisis affecting 75 sales reps. Each company had 4-6 duplicate lead records, creating daily inefficiencies and eliminating visibility into various touchpoints within target organizations. Sales reps spent 20+ minutes daily just trying to understand account relationships and contact history.</p>
                         </div>
-                        
                         <div class="solution">
                             <h4>⚡ Solution</h4>
                             <p>Designed and implemented a phased data consolidation strategy over multiple cycles. Consolidated duplicate lead records into unified account structures, established proper account hierarchies, and created clear visibility into all organizational touchpoints. Implemented data governance processes to prevent future duplication.</p>
                         </div>
-                        
                         <div class="results">
                             <h4>📈 Results</h4>
                             <div class="results-grid">
@@ -1461,24 +1181,21 @@
 
                 <div class="case-study-card">
                     <div class="case-study-header">
-                        <h3>CRM & Okta Integration</h3>
+                        <h3>CRM &amp; Okta Integration</h3>
                         <div class="case-study-meta">
                             <span class="company-type">Enterprise SaaS Platform</span>
                             <span class="timeline">8-month project</span>
                         </div>
                     </div>
-                    
                     <div class="case-study-content">
                         <div class="challenge">
                             <h4>🎯 Challenge</h4>
                             <p>Access chaos across the organization - users with identical roles had inconsistent permissions, role changes left people with accumulated access they shouldn't have, and hundreds of ungrouped permission sets with 20+ profiles created a security and management nightmare requiring manual user setup for every new hire.</p>
                         </div>
-                        
                         <div class="solution">
                             <h4>⚡ Solution</h4>
                             <p>Led comprehensive access architecture redesign: identified user personas, consolidated hundreds of permission sets into logical groups, aligned vernacular across Workday-Okta-CRM systems, and built automated user provisioning with custom CRM automation for edge cases Okta couldn't handle. Extensive UAT ensured zero critical access loss during transition.</p>
                         </div>
-                        
                         <div class="results">
                             <h4>📈 Results</h4>
                             <div class="results-grid">
@@ -1507,18 +1224,15 @@
                             <span class="timeline">2-month project</span>
                         </div>
                     </div>
-                    
                     <div class="case-study-content">
                         <div class="challenge">
                             <h4>🎯 Challenge</h4>
                             <p>Referral partners had zero visibility after submitting leads - they couldn't track deal progression, identify where they could help accelerate stuck deals, or know if their submissions were being actioned. This created partner frustration and missed opportunities for collaboration.</p>
                         </div>
-                        
                         <div class="solution">
                             <h4>⚡ Solution</h4>
                             <p>Implemented a private partner portal integrated with our CRM system. Partners could submit leads, track status in real-time, monitor conversion to opportunities, see assigned sales reps, and view current opportunity stages. Built with role-based access ensuring data privacy between partner companies.</p>
                         </div>
-                        
                         <div class="results">
                             <h4>📈 Results</h4>
                             <div class="results-grid">
@@ -1541,6 +1255,7 @@
             </div>
         </section>
 
+        <!-- Experience — unchanged -->
         <section id="experience" class="section">
             <div class="section-header">
                 <h2 class="section-title">EXPERIENCE</h2>
@@ -1559,7 +1274,6 @@
                     <div class="company">Fleetcor (formerly Comdata)</div>
                     <div class="period">2014 - 2021 (7 years)</div>
                     <p>Advanced through progressive leadership roles during Comdata's acquisition by Fleetcor. Coordinated large-scale sales events for teams of 75-150 members and matrix-managed international teams of up to 20 members across multiple geographies in Russia. At one point managed 1 people manager, with largest direct team reaching 5 members. Built and managed cross-functional teams across departments.</p>
-                    
                     <p>Led two major CRM initiatives: consolidated duplicate lead records into a unified account structure for a 75-person sales team ($470K+ annual savings), and implemented Sales Navigator integration, improving contact success rates by 25%. Combined impact delivered $500K+ in annual productivity gains.</p>
                 </div>
                 <div class="timeline-item">
@@ -1569,7 +1283,7 @@
                     <p>Gained first exposure to advanced technologies like Salesforce while building operational excellence skills. Focused on Salesforce reporting, sales presentations, and coordinating sales events for teams of 40 members. Managed office operations while developing technical foundation in CRM systems that would drive future leadership success.</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Early Career & Foundation</h3>
+                    <h3>Early Career &amp; Foundation</h3>
                     <div class="company">Axsa Document Solutions</div>
                     <div class="period">2003 - 2011 (8 years)</div>
                     <p>Started corporate career after a non-traditional path, quickly demonstrating natural aptitude for process improvement and operational excellence. Earned a degree while working full-time and raising two children, developing a strong work ethic and problem-solving skills that became the foundation for future leadership success.</p>
@@ -1577,6 +1291,7 @@
             </div>
         </section>
 
+        <!-- Contact — unchanged -->
         <section id="contact" class="section">
             <div class="section-header">
                 <h2 class="section-title">LET'S CONNECT</h2>
@@ -1628,10 +1343,7 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
@@ -1639,14 +1351,12 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section[id]');
-            
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 if (pageYOffset >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
-
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
@@ -1655,22 +1365,13 @@
             });
         });
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
